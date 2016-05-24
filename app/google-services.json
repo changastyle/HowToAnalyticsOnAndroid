@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "156777443764",
+    "project_id": "testa-881fd"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:156777443764:android:8c274437e46ab94a",
+        "android_client_info": {
+          "package_name": "com.etips.testa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl7_WDX_eBihwYVDtSGA6Z5P6IY8txw3o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-78197038-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
