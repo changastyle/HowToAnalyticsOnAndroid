@@ -1,0 +1,40 @@
+V4 del GAnalytics
+https://www.youtube.com/watch?v=p37g9h_Zkw0&noredirect=1
+https://developers.google.com/analytics/devguides/collection/ios/v3/mobile-implementation-guide#intro
+
+
+
+Si hay acciones importantes de las que quieres realizar el seguimiento en tu aplicación, se pueden utilizar eventos para describir esta acción en Google Analytics. Un evento consta de cuatro parámetros: 
+	-category
+	-action
+	-label 
+	-value.
+
+https://developers.google.com/analytics/devguides/collection/gajs/eventTrackerGuide#setting-up-event-tracking
+
+// To determine how many dragons are being rescued, send an event when the
+// player rescues a dragon.
+tracker.send(new HitBuilders.EventBuilder()
+    .setCategory("Barren Fields")
+    .setAction("Rescue")
+    .setLabel("Dragon")
+    .setValue(1)
+    .build());
+
+// To determine if players are visiting the magic tree, send an event when the
+// player is in the vicinity of the magic tree.
+tracker.send(new HitBuilders.EventBuilder()
+    .setCategory("Barren Fields")
+    .setAction("Visited")
+    .setLabel("Magic Tree")
+    .setValue(1)
+    .build());
+
+// To determine if players are visiting the well, send an event when the player
+// is in the vicinity of the well.
+tracker.send(new HitBuilders.EventBuilder()
+    .setCategory("Barren Fields")
+    .setAction("Visited")
+    .setLabel("Well")
+    .setValue(1)
+    .build());

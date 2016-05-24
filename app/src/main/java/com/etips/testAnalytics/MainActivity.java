@@ -17,10 +17,10 @@ public class MainActivity extends AppCompatActivity
         Tracker tracker= Analytics.dameTracker(this);
 
         tracker.send(new HitBuilders.EventBuilder()
-                .setCategory("Barren Fields")
-                .setAction("Rescue")
-                .setLabel("Dragon")
-                .setValue(1)
-                .build());
+                .setCategory("Barren Fields")       //NIVEL O VENTANA O ACTIVITY:
+                .setAction("Rescue")                //ACCION: BORRAR, AGREGAR, MODIFICAR
+                .setLabel("Dragon")                 //TITULO PARA LA ACCION
+                .setValue(1)                        //VALOR DE LA ACCION
+                .build());                          //CONSTRUIR
     }
 }
